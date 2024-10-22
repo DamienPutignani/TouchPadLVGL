@@ -1,0 +1,2 @@
+Placer ces 3 fichiers ici: C:\ncs\v2.7.0\zephyr\boards\shields\st7789v_generic
+et ajouter -DSHIELD="st7789v_custom_240x320" en "EXTRA CMAKE arguments
