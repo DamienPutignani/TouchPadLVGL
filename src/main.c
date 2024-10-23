@@ -67,30 +67,7 @@ static void lv_btn_click_callback(lv_event_t *e)
 
 void touchpad_read(lv_indev_drv_t *indev_drv, lv_indev_data_t *data)
 {
-   /* struct input_event evt;
-	uint16_t type;
-	k_timeout_t timout;
-    int ret;
-	evt.value=0;
 
-	timout.ticks=1000;
-
-    ret = input_report(lvgl_pointer_dev, &type, evt.type, evt.value, evt.sync, timout); //use input_process instead ?
-	
-
-    if (evt.type == INPUT_EV_ABS) {
-        switch (evt.code) {
-            case INPUT_ABS_X:
-                data->point.x = evt.value;  // Récupère la coordonnée X
-                break;
-            case INPUT_ABS_Y:
-                data->point.y = evt.value;  // Récupère la coordonnée Y
-                break;
-        }
-    } else if (evt.type == INPUT_EV_KEY && evt.code == INPUT_BTN_TOUCH) {
-        // Si l'utilisateur touche l'écran, on met à jour l'état du toucher
-        data->state = evt.value == 1 ? true : false;
-    }*/
 }
 
 void lvgl_touch_init(void)
